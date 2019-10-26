@@ -1,0 +1,311 @@
+/* global css*/
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+  }
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+html{
+    font-size: 20px;
+}
+/*end global css*/
+/* start header css */
+.header{
+    width: 100%;
+    height: 6rem;
+}
+.header__content{
+    margin-left: 0.5rem;
+    margin-right: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__content img{
+    max-width: 100%;
+    height: 5rem;
+}
+/* end header css */
+/* start navbar css */
+.navbar{
+    width: 100%;
+    border-bottom: 0.5px solid #8b8b8b8a;
+    border-top: 0.5px solid #8b8b8b8a;
+}
+
+.navbar__item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+.navbar__item li{
+    list-style: none;
+    
+}
+.navbar__item a{
+    text-decoration: none;
+    color: #8b8b8b;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.1rem 0.3rem;
+}
+.navbar__item a:hover{
+    color: #303030;
+    border-bottom: 3.3px solid #a81f21;
+}
+/* end navbar css */
+/* start slider css */
+.slider{
+    width:100%;
+}
+.slider__content{
+    margin: 2rem 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+.slider__content img{
+    max-width: 100%;
+    height: 26rem;
+}
+/* end slider css */
+/* start intro */
+.intro{
+    width: 100%;
+}
+.intro__content{
+    margin: 4rem 0.8rem;
+    text-align: center;
+    color: #202020;
+}
+.intro__content p{
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+    color: #8b8b8b;
+}
+.intro__title h1{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #303030de;
+    margin-bottom: 0;
+}
+.intro__title img{
+    width: 40rem;
+}
+/*end intro */
+/*start study-program css*/
+.study-program{
+    width: 100%;
+}
+.study-program__content{
+    margin: 4rem 0;
+}
+.study-program__title{
+    text-align: center;
+}
+.study-program__title h1{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #303030de;
+    margin-bottom: 0;
+}
+.study-program__title img{
+    width: 40rem;
+}
+.study-program__detail{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+.study-program__detail a{
+    text-decoration: none;
+}
+
+.study-program__item{
+    width: 25%;
+    justify-content: space-between;
+    margin: 0.8rem;
+}
+.study-program__item img{
+    width: 100%;
+    max-height: 100%;
+}
+
+.study-program__item p{
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #a81f21;
+    margin-bottom: 0.2rem;
+}
+.study-program__item span{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #8b8b8b;
+}
+/*end study-program css*/
+/* start new  */
+.new{
+    width: 100%;
+}
+.new__content{
+    margin: 4rem 0.8rem;
+}
+.new__title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.new__title h1{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #303030de;
+    margin-bottom: 0;
+}
+.new__detail{
+    width: 100%;
+    height: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.8rem;
+}
+
+.img-1{
+    background-image: url(./../images/tin_tuc_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 1/ span 2;
+    grid-column: 1/ span 2; 
+}
+.img-2{
+    background-image: url(./../images/tin_tuc_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-3{
+    background-image: url(./../images/tin_tuc_3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-4{
+    background-image: url(./../images/tin_tuc_4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-5{
+    background-image: url(./../images/tin_tuc_5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.new__caption{
+    position: relative;
+}
+.new-textbox p{
+    color: white;
+    background-color: #000000a1;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding : 0.5rem 1rem;
+    font-weight: 600;
+    
+}
+.new-textbox .new-line{
+    border-bottom: 4px solid #a81f21;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+}
+
+.img-1 p{
+    font-size: 1rem;
+ }
+.img-2 p,.img-3 p,.img-4 p,.img-5 p{
+    font-size: 0.7rem;
+}
+/* end new  */
+/* <!-- start contact --> */
+.contact{
+    width: 100%;
+    background-color: #a81f21;
+}
+.contact__content{
+    margin: 0.3rem 0.8rem;
+    display: flex;
+    padding-bottom: 0.6rem;
+}
+.address{
+    width:50%;
+    margin-right: 0.4rem;
+}
+.sign-up{
+    width: 50%;
+    margin-left: 0.4rem;
+}
+.map-contact{
+    width: 100%;
+    height: 32rem;
+}
+.contact__intro h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+.intro-line{
+    background-color: white;
+    height: 4px;
+}
+.contact__pin{
+    display: flex;
+}
+.contact__pin img{
+    max-width: 100%;
+    height: 100%;
+    margin-right: 0.3rem;
+}
+.contact__address p{
+    margin: 0;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+#textbox, .contact-form input{
+    width: 90%;
+    padding: 0.5rem 1.1rem;
+    margin-top: 1.5rem;
+    color:white;
+    background-color: #ffffff7c;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+.contact-form{
+    text-align: center;
+}
+#textbox{
+    height: 15rem;
+}
+.contact-form button{
+    background-color: white;
+    color: #a81f21;
+    margin-top: 1.5rem;
+    font-size: 0.7rem;
+    font-weight: 800;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 0.4rem 1.5rem;
+}
+.contact-form button:hover{
+    color: white;
+    background-color: #a81f21;
+    border: 1px solid white; 
+}
+/* <!-- end contact --> */
